@@ -68,7 +68,7 @@ The analysis prompt strictly enforces that the contract text remains the **singl
 ### Key Learnings & Iterations
 
 | Area | Initial Problem | Root Cause | Solution & Prompt Adjustment |
-| : | : | : | : |
+| :--- | :--- | :--- | :--- |
 | **Date Extraction** | Failed to compute end dates when written as relative duration (e.g., *"12 months from Effective Date"*). | Prompt strictly prohibited non-explicit dates. | Updated prompt to permit deterministic date calculations when explicit reference points exist. |
 | **Risk Flags** | High false-positive rate flagging standard boilerplate clauses. | AI had too much discretion without requiring justification. | Tightened rules to require a specific, document-supported reason for every flagged risk. |
 
